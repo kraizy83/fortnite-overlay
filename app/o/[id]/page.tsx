@@ -660,23 +660,23 @@ export default function OverlayPage({
     <main className="fixed inset-0 bg-transparent pointer-events-none">
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="flex items-center">
-        <span
-          className="text-6xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
-        >
-          {stats.top ?? "-"}
-        </span>
+          <span
+            className="w-32 text-center text-6xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
+          >
+            {stats.top ?? "-"}
+          </span>
 
           <span
-            className="ml-40 text-6xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
+            className="ml-36 w-32 text-center text-6xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
           >
             {stats.points ?? "-"}
           </span>
 
-        <span
-          className="ml-46 text-6xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
-        >
-          {stats.games ?? "-"}
-        </span>
+          <span
+            className="ml-36 w-32 text-center text-6xl font-bold bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent"
+          >
+            {stats.games ?? "-"}
+          </span>
         </div>
       </div>
     </main>
