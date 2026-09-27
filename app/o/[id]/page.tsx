@@ -128,7 +128,10 @@ export default function OverlayPage({
   useEffect(() => {
     if (!config) {
       return;
+      
     }
+
+    const currentConfig = config;
 
     let cancelled = false;
 
@@ -196,7 +199,7 @@ export default function OverlayPage({
           entry.players?.some(
             (player) =>
               player.accountId ===
-              config.epic_account_id
+              currentConfig.epic_account_id
           )
         ) ?? null
       );
@@ -337,7 +340,7 @@ export default function OverlayPage({
       try {
         const tournamentData =
           JSON.parse(
-            config.tournament_id
+            currentConfig.tournament_id
           );
 
         const leaderboardEventId =
@@ -577,7 +580,7 @@ export default function OverlayPage({
             foundEntry.players?.[0]?.username,
 
           accountId:
-            config.epic_account_id,
+            currentConfig.epic_account_id,
 
           page: playerPage,
 
